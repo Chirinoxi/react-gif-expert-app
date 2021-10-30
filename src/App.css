@@ -1,38 +1,39 @@
-.App {
+/* @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap'); Mukta */
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
+
+* {
+  font-family: "Sora", sans-serif, "Mukta", sans-serif;
+}
+
+body {
+  padding: 5%;
+}
+
+button {
+  border-radius: 10%;
+  float: right;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  align-content: center;
+  border: 1px solid grey;
+  border-radius: 6px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.card p {
+  padding: 6px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card img {
+  max-height: 150px;
 }
