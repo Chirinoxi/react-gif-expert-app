@@ -8,14 +8,13 @@ const useFetchGifs = (category) => {
   });
   // ------------- FORMA #2 -------------
   useEffect(() => {
-    getGifs(category).then((images) => {
-      setTimeout(() => {
+    getGifs(category)
+      .then((images) => {
         setState({
           data: images,
           loading: false,
         });
-      }, 1000);
-    });
+      });
   }, [category]);
 
   return state; // { data: [], loading: boolean }
